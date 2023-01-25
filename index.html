@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>G2-Form</title>
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="css/style.css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/style.js"></script>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 pb-5">
+
+        <div class="author-card pb-3">
+          <div class="author-card-cover"
+            style="background-image: url(img/bg-pf.jpeg);">
+          </div>
+          <div class="author-card-profile">
+            <div class="author-card-avatar">
+              <div class="picture-container">
+                <div class="picture">
+                    <img src="img/meow.jpeg" class="picture-src" id="wizardPicturePreview" title="">
+                    <input type="file" id="wizard-picture" class="">
+                </div>
+            </div>
+            </div>
+            <div class="author-card-details">
+              <h5 class="author-card-name text-lg">Cat Lover</h5><span class="author-card-position">Joined January
+                24, 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="wizard">
+          <nav class="list-group list-group-flush">
+            <a class="list-group-item active" href="#"><i class="fe-icon-user text-muted"></i>Profile Settings</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="col-lg-8 pb-5">
+        <form>
+          <div class="row">
+          <div class="col-sm-2">
+            <div class="form-group">
+              <b><label for="account-title">Title</label></b>
+              <select required class="form-control" id="account-title">
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <b><label for="account-fn">First Name</label></b>
+              <input class="form-control" type="text" id="account-fn" value="Cat" required="">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <b><label for="account-ln">Last Name</label></b>
+              <input class="form-control" type="text" id="account-ln" value="Lover" required="">
+            </div>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <b><label for="account-gender">Gender</label></b>
+              <select required class="form-control" id="account-gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-Binary">Non-Binary</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <b><label for="account-birthday">Birthday</label></b>
+              <input class="form-control" type="date" id="account-birthday" value="2001-01-01" required="">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <b><label for="account-email">E-mail Address</label></b>
+              <input class="form-control" type="email" id="account-email" value="abcd@dome.tu.ac.th" disabled="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <b><label for="account-phone">Phone Number</label></b>
+              <input class="form-control" type="text" id="account-phone" value="0123456789" required="">
+            </div>
+          </div>
+        </div>
+          <div class="col-md-20">
+            <div class="form-group">
+              <b><label for="account-address">Address</label></b>
+              <textarea class="form-control" id="account-address" rows="5" cols="30">99 Phahonyothin Road, Tambon Khlong Nung, Amphoe Khlong Luang, Chang Wat Pathum Thani 12120</textarea>
+            </div>
+          </div>
+          <div class="col-15">
+            <hr class="mt-2 mb-3">
+            <div class="d-flex flex-wrap justify-content-center align-items-center">
+              <button class="btn" type="button" data-toast="" data-toast-position="topRight"
+                data-toast-type="success" data-toast-icon="fe-icon-check-circle" data-toast-title="Save!"
+                data-toast-message="Your profile saved successfuly.">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer-basic">
+    <footer>
+      <p class="copyright">CS369 Web Application Development © 2023</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+
+  </script>
+</body>
+
+</html>
